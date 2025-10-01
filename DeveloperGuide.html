@@ -22,23 +22,23 @@ than attempting to perform the undo.</p><!--]--></div><!-- dismiss button on the
 itself.</p> <ul><li>Pros: Will use less memory (e.g. for <code class="hljs inline no-lang">delete</code>, just save the person being deleted).</li> <li>Cons: We must ensure that the implementation of each individual command are correct.</li></ul></li></ul> <p><em>{more aspects and alternatives to be added}</em></p> <h3 id="proposed-data-archiving">[Proposed] Data archiving<a class="fa fa-anchor" href="#proposed-data-archiving" onclick="event.stopPropagation()"></a></h3> <p><em>{Explain here how the data archiving feature will be implemented}</em></p> <hr> <h2 id="documentation-logging-testing-configuration-dev-ops"><strong>Documentation, logging, testing, configuration, dev-ops</strong><a class="fa fa-anchor" href="#documentation-logging-testing-configuration-dev-ops" onclick="event.stopPropagation()"></a></h2> <ul><li><a href="/tp/Documentation.html">Documentation guide</a></li> <li><a href="/tp/Testing.html">Testing guide</a></li> <li><a href="/tp/Logging.html">Logging guide</a></li> <li><a href="/tp/Configuration.html">Configuration guide</a></li> <li><a href="/tp/DevOps.html">DevOps guide</a></li></ul> <hr> <h2 id="appendix-requirements"><strong>Appendix: Requirements</strong><a class="fa fa-anchor" href="#appendix-requirements" onclick="event.stopPropagation()"></a></h2> <h3 id="product-scope">Product scope<a class="fa fa-anchor" href="#product-scope" onclick="event.stopPropagation()"></a></h3> <p><strong>Target user profile</strong>:
 School coaches that coach relay teams in different schools. They:</p> <ul><li>have a need to manage a significant number of athletes and teams</li> <li>prefer desktop apps over other types</li> <li>can type fast</li> <li>prefer typing to mouse interactions</li> <li>are reasonably comfortable using CLI apps</li></ul> <p><strong>Value proposition</strong>:
 Given that coaches generally have many athletes to keep track of, our product aims to help
-coaches manage athletes and teams from different schools faster than a typical mouse/GUI driven app</p> <h3 id="user-stories">User stories<a class="fa fa-anchor" href="#user-stories" onclick="event.stopPropagation()"></a></h3> <p>Priorities: High (must have) - <code class="hljs inline no-lang">* * *</code>, Medium (nice to have) - <code class="hljs inline no-lang">* *</code>, Low (unlikely to have) - <code class="hljs inline no-lang">*</code></p> <div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead><tr><th>Priority</th> <th>As a …​</th> <th>I want to …​</th> <th>So that I can…​</th></tr></thead> <tbody><tr><td><code class="hljs inline no-lang">* * *</code></td> <td>new user</td> <td>see usage instructions</td> <td>refer to instructions when I forget how to use the App</td></tr> <tr><td><code class="hljs inline no-lang">* * *</code></td> <td>user</td> <td>add a new athlete</td> <td></td></tr> <tr><td><code class="hljs inline no-lang">* * *</code></td> <td>user</td> <td>delete a athlete</td> <td>remove entries that I no longer need</td></tr> <tr><td><code class="hljs inline no-lang">* * *</code></td> <td>user</td> <td>find a person by name</td> <td>locate details of persons without having to go through the entire list</td></tr> <tr><td><code class="hljs inline no-lang">* *</code></td> <td>user with lots of athletes to keep track of</td> <td>find athletes by school, role or tag</td> <td>locate details of athletes that I wish to find via these means</td></tr> <tr><td><code class="hljs inline no-lang">* *</code></td> <td>user managing multiple teams</td> <td>group athletes by their teams</td> <td>keep track of who is in which team</td></tr> <tr><td><code class="hljs inline no-lang">* *</code></td> <td>user</td> <td>find a team by name</td> <td>locate details of teams without having to go through the entire list</td></tr> <tr><td><code class="hljs inline no-lang">*</code></td> <td>user with multiple teams&#39; training to keep track of</td> <td>add a team&#39;s training sessions</td> <td>keep track of team&#39;s training sessions</td></tr> <tr><td><code class="hljs inline no-lang">* *</code></td> <td>user</td> <td>delete a team</td> <td>remove teams that I no longer need</td></tr> <tr><td><code class="hljs inline no-lang">*</code></td> <td>user with many persons in the address book</td> <td>sort persons by name</td> <td>locate a person easily</td></tr> <tr><td><code class="hljs inline no-lang">*</code></td> <td>user needing to keep track of athletes&#39; progress</td> <td>record attendance for athletes</td> <td>monitor his / her progress in training</td></tr> <tr><td><code class="hljs inline no-lang">*</code></td> <td>user</td> <td>add a new session</td> <td>record down all sessions date time and location</td></tr> <tr><td><code class="hljs inline no-lang">*</code></td> <td>user</td> <td>assign athletes to a session</td> <td>track down which athlete is supposed to attend a particular session</td></tr> <tr><td><code class="hljs inline no-lang">*</code></td> <td>user</td> <td>list down all upcoming sessions</td> <td>keep track of which sessions are upcoming and who is attending</td></tr> <tr><td><code class="hljs inline no-lang">*</code></td> <td>user</td> <td>delete a session</td> <td>remove unwanted sessions</td></tr></tbody></table></div><p><em>{More to be added}</em></p> <h3 id="use-cases">Use cases<a class="fa fa-anchor" href="#use-cases" onclick="event.stopPropagation()"></a></h3> <p>(For all use cases below, the <strong>System</strong> is the <code class="hljs inline no-lang">RelayCoach</code> and the <strong>Actor</strong> is the <code class="hljs inline no-lang">Coach</code>, unless specified otherwise)</p> <p><strong>Use case: Add Athlete (Basic Info)</strong></p> <p><strong>MSS</strong></p> <pre><code>1.	Coach chooses to add a new athlete.
-2.  RelayCoach requests the athlete’s basic details.
-3.  Coach provides the requested details.
-4.	RelayCoach validates the details.
-5.	RelayCoach saves the athlete’s record.
-6.	RelayCoach confirms the addition and displays the stored information.
+coaches manage athletes and teams from different schools faster than a typical mouse/GUI driven app</p> <h3 id="user-stories">User stories<a class="fa fa-anchor" href="#user-stories" onclick="event.stopPropagation()"></a></h3> <p>Priorities: High (must have) - <code class="hljs inline no-lang">* * *</code>, Medium (nice to have) - <code class="hljs inline no-lang">* *</code>, Low (unlikely to have) - <code class="hljs inline no-lang">*</code></p> <div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead><tr><th>Priority</th> <th>As a …​</th> <th>I want to …​</th> <th>So that I can…​</th></tr></thead> <tbody><tr><td><code class="hljs inline no-lang">* * *</code></td> <td>new user</td> <td>see usage instructions</td> <td>refer to instructions when I forget how to use the App</td></tr> <tr><td><code class="hljs inline no-lang">* * *</code></td> <td>user</td> <td>add a new athlete</td> <td></td></tr> <tr><td><code class="hljs inline no-lang">* * *</code></td> <td>user</td> <td>delete a athlete</td> <td>remove entries that I no longer need</td></tr> <tr><td><code class="hljs inline no-lang">* * *</code></td> <td>user</td> <td>find a person by name</td> <td>locate details of persons without having to go through the entire list</td></tr> <tr><td><code class="hljs inline no-lang">* *</code></td> <td>user with lots of athletes to keep track of</td> <td>find athletes by school, role or tag</td> <td>locate details of athletes that I wish to find via these means</td></tr> <tr><td><code class="hljs inline no-lang">* *</code></td> <td>user managing multiple teams</td> <td>group athletes by their teams</td> <td>keep track of who is in which team</td></tr> <tr><td><code class="hljs inline no-lang">* *</code></td> <td>user</td> <td>find a team by name</td> <td>locate details of teams without having to go through the entire list</td></tr> <tr><td><code class="hljs inline no-lang">*</code></td> <td>user with multiple teams&#39; training to keep track of</td> <td>add a team&#39;s training sessions</td> <td>keep track of team&#39;s training sessions</td></tr> <tr><td><code class="hljs inline no-lang">* *</code></td> <td>user</td> <td>delete a team</td> <td>remove teams that I no longer need</td></tr> <tr><td><code class="hljs inline no-lang">*</code></td> <td>user with many persons in the address book</td> <td>sort persons by name</td> <td>locate a person easily</td></tr> <tr><td><code class="hljs inline no-lang">*</code></td> <td>user needing to keep track of athletes&#39; progress</td> <td>record attendance for athletes</td> <td>monitor his / her progress in training</td></tr> <tr><td><code class="hljs inline no-lang">*</code></td> <td>user</td> <td>add a new session</td> <td>record down all sessions date time and location</td></tr> <tr><td><code class="hljs inline no-lang">*</code></td> <td>user</td> <td>assign athletes to a session</td> <td>track down which athlete is supposed to attend a particular session</td></tr> <tr><td><code class="hljs inline no-lang">*</code></td> <td>user</td> <td>list down all upcoming sessions</td> <td>keep track of which sessions are upcoming and who is attending</td></tr> <tr><td><code class="hljs inline no-lang">*</code></td> <td>user</td> <td>delete a session</td> <td>remove unwanted sessions</td></tr></tbody></table></div><p><em>{More to be added}</em></p> <h3 id="use-cases">Use cases<a class="fa fa-anchor" href="#use-cases" onclick="event.stopPropagation()"></a></h3> <p>(For all use cases below, the <strong>System</strong> is the <code class="hljs inline no-lang">RelayCoach</code> and the <strong>Actor</strong> is the <code class="hljs inline no-lang">Coach</code>, unless specified otherwise)</p> <p><strong>Use case: Add Athlete (Basic Info)</strong></p> <p><strong>MSS</strong></p> <pre><code>1. Coach chooses to add a new athlete.
+2. RelayCoach requests the athlete’s basic details.
+3. Coach provides the requested details.
+4. RelayCoach validates the details.
+5. RelayCoach saves the athlete’s record.
+6. RelayCoach confirms the addition and displays the stored information.
 Use case ends.
 </code></pre> <p><strong>Extensions</strong></p> <pre><code>3a. RelayCoach detects missing or invalid details.
     3a1. RelayCoach requests correction of details.
     3a2. Coach updates information.
     Use case resumes from Step 4.
-</code></pre> <p><strong>Use case: Add Athlete (Additional Info)</strong></p> <p><strong>MSS</strong></p> <pre><code>1.	Coach selects an athlete from the list.
-2.	RelayCoach requests additional information (Role, Tags, Height, Weight).
-3.	Coach provides the information.
-4.	RelayCoach validates the information.
-5.	RelayCoach updates the athlete’s record.
-6.	RelayCoach confirms the update and displays the new information.
+</code></pre> <p><strong>Use case: Add Athlete (Additional Info)</strong></p> <p><strong>MSS</strong></p> <pre><code>1. Coach selects an athlete from the list.
+2. RelayCoach requests additional information (Role, Tags, Height, Weight).
+3. Coach provides the information.
+4. RelayCoach validates the information.
+5. RelayCoach updates the athlete’s record.
+6. RelayCoach confirms the update and displays the new information.
 Use case ends.
 </code></pre> <p><strong>Extensions</strong></p> <pre><code>2a. Athlete Index not found.
     2a1. RelayCoach displays an error message.
@@ -47,17 +47,17 @@ Use case ends.
 4a. Invalid data.
     4a1. RelayCoach requests correction of information.
     Use case resumes from Step 3.
-</code></pre> <p><strong>Use case: List Athletes</strong></p> <p><strong>MSS</strong></p> <pre><code>1.	Coach requests to view all athletes.
-2.	RelayCoach retrieves all stored athletes.
-3.	RelayCoach displays the list with details (Name, School, Role, Tags, etc.).
+</code></pre> <p><strong>Use case: List Athletes</strong></p> <p><strong>MSS</strong></p> <pre><code>1. Coach requests to view all athletes.
+2. RelayCoach retrieves all stored athletes.
+3. RelayCoach displays the list with details (Name, School, Role, Tags, etc.).
 Use case ends.
 </code></pre> <p><strong>Extensions</strong></p> <pre><code>2a. No athletes found.
     2a1. RelayCoach informs the coach that no athletes are stored.
     Use case ends.
-</code></pre> <p><strong>Use case: Find Athletes by Filter</strong></p> <p><strong>MSS</strong></p> <pre><code>1.	Coach chooses to find athletes by specifying one or more filters (Name, School, Role, Tag).
-2.	RelayCoach validates the filter input.
-3.	RelayCoach searches the database.
-4.	RelayCoach displays the matching athletes with details.
+</code></pre> <p><strong>Use case: Find Athletes by Filter</strong></p> <p><strong>MSS</strong></p> <pre><code>1. Coach chooses to find athletes by specifying one or more filters (Name, School, Role, Tag).
+2. RelayCoach validates the filter input.
+3. RelayCoach searches the database.
+4. RelayCoach displays the matching athletes with details.
 Use case ends.
 </code></pre> <p><strong>Extensions</strong></p> <pre><code>2a. Filter missing or invalid.
     2a1. RelayCoach prompts for correction.
@@ -66,20 +66,125 @@ Use case ends.
 3a. No athletes found.
     3a1. RelayCoach informs the coach that no matching athletes were found.
     Use case ends.
-</code></pre> <p><strong>Use case: Delete Athlete</strong></p> <p><strong>MSS</strong></p> <pre><code>1.	Coach selects an athlete to delete.
-2.	RelayCoach verifies the selection.
-3.	RelayCoach removes the athlete’s record.
-4.	RelayCoach confirms the deletion.
+</code></pre> <p><strong>Use case: Delete Athlete</strong></p> <p><strong>MSS</strong></p> <pre><code>1. Coach selects an athlete to delete.
+2. RelayCoach verifies the selection.
+3. RelayCoach removes the athlete’s record.
+4. RelayCoach confirms the deletion.
 Use case ends.
 </code></pre> <p><strong>Extensions</strong></p> <pre><code>2a. Selection invalid (e.g., index out of bounds).
     2a1. RelayCoach prompts for correction.
+    Use case ends.
+</code></pre> <p><strong>Use case: Group Athletes by Teams</strong></p> <p><strong>MSS</strong></p> <pre><code>1. Coach chooses to form a new relay team.
+2. RelayCoach requests the team name and athlete indexes.
+3. Coach provides the team name and 4 valid athlete indexes.
+4. RelayCoach validates the details.
+5. RelayCoach creates the new team with the specified athletes.
+6. RelayCoach confirms the team creation and displays the team details.
+Use case ends.
+</code></pre> <p><strong>Extensions</strong></p> <pre><code>3a. Missing or invalid details provided.
+    3a1. RelayCoach requests correction of team name or indexes.
+    3a2. Coach updates information. 
+    Use case resumes from Step 4.
+
+4a. Fewer/more than 4 indexes provided.
+    4a1. RelayCoach rejects team creation and informs coach.
+    Use case ends.
+
+4b. Invalid athlete index provided.
+    4b1. RelayCoach notifies coach that the index does not match any athlete.
+    Use case ends.
+
+4c. Duplicate athlete index detected. 
+    4c1. RelayCoach rejects team creation due to duplicate members.
+    Use case ends.
+
+4d. Athlete already belongs to another team.
+    4d1. RelayCoach informs coach that the athlete is already in &lt;existing_team&gt;.
+    Use case ends.
+
+4e. No athletes exist in the database.
+    4e1. RelayCoach prompts coach to add athletes first.
+    Use case ends.
+</code></pre> <p><strong>Use case: View Team Information</strong></p> <p><strong>MSS</strong></p> <pre><code>1. Coach chooses to view teams.
+2. RelayCoach requests an optional team name filter.
+3. Coach provides either no team name or a specific team name.
+4. RelayCoach retrieves the relevant team(s) and displays details.
+5. Use case ends.
+</code></pre> <p><strong>Extensions</strong></p> <pre><code>3a. Invalid team name provided (non-alphabet characters).
+    3a1. RelayCoach notifies coach of invalid team name.
+    Use case ends.
+
+4a. No teams exist in the database.
+    4a1. RelayCoach informs coach: “No teams found!”.
+    Use case ends.
+
+4b. No teams match the provided team name.
+    4b1. RelayCoach informs coach: “No teams found!”.
+    Use case ends.
+</code></pre> <p><strong>Use case: Add Session to Team</strong></p> <p><strong>MSS</strong></p> <pre><code>1. Coach chooses to add a training session for a team.
+2. RelayCoach requests the team index, session date/time, and location.
+3. Coach provides the requested details.
+4. RelayCoach validates the input.
+5. RelayCoach adds the session to the specified team.
+6. RelayCoach confirms the addition and displays the updated team schedule.
+Use case ends.
+</code></pre> <p><strong>Extensions</strong></p> <pre><code>3a. Missing team index.
+    3a1. RelayCoach notifies coach of missing team index.
+    Use case ends.
+
+3b. Invalid date/time format provided.
+    3b1. RelayCoach requests correction using required format yyyy-MM-dd HHmm.
+    Use case ends.
+
+3c. Missing location.
+    3c1. RelayCoach notifies coach that location must be provided.
+    Use case ends.
+
+4a. Invalid team index.
+    4a1. RelayCoach informs coach the team does not exist.
+    Use case ends.
+
+4b. Duplicate session detected (same team, same date/time).
+    4b1. RelayCoach rejects scheduling and notifies coach.
+    Use case ends.
+</code></pre> <p><strong>Use case: Delete Team</strong></p> <p><strong>MSS</strong></p> <pre><code>1. Coach chooses to delete a team.
+2. RelayCoach requests the team index.
+3. Coach provides the team index.
+4. RelayCoach validates the team index.
+5. RelayCoach deletes the team from the database.
+6. RelayCoach confirms deletion with a success message.
+Use case ends.
+</code></pre> <p><strong>Extensions</strong></p> <pre><code>2a. Selection invalid (e.g., index out of bounds).
+    2a1. RelayCoach prompts for correction.
+    Use case ends.
+</code></pre> <p><strong>Use case: Add Students to Session</strong></p> <p><strong>MSS</strong></p> <pre><code>1. Coach chooses to add students to a session.
+2. RelayCoach requests session datetime, location, and student indexes.
+3. Coach provides the requested details.
+4. RelayCoach validates the input.
+5. RelayCoach adds the students to the specified session.
+6. RelayCoach confirms the addition and displays updated session details.
+Use case ends.
+</code></pre> <p><strong>Extensions</strong></p> <pre><code>3a. Missing student index.
+    3a1. RelayCoach notifies coach that at least one student index must be provided.
+    Use case ends.
+
+3b. Invalid date/time format.
+    3b1. RelayCoach requests correction using required format yyyy-MM-dd HHmm.
+    Use case ends.
+
+3c. Missing location.
+    3c1. RelayCoach notifies coach that location is required.
+    Use case ends.
+
+4a. Invalid student index provided.
+    4a1. RelayCoach informs coach that the student does not exist.
     Use case ends.
 </code></pre> <h3 id="non-functional-requirements">Non-Functional Requirements<a class="fa fa-anchor" href="#non-functional-requirements" onclick="event.stopPropagation()"></a></h3> <ol><li>Should work on any <em>mainstream OS</em> as long as it has Java <code class="hljs inline no-lang">17</code> or above installed.</li> <li>Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage.</li> <li>A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.</li> <li>The command interface should allow coaches to perform common tasks while standing or in outdoor environments without requiring precise mouse movements.</li> <li>The application should efficiently handle peak usage during competition seasons when coaches need to manage multiple teams and training sessions simultaneously.</li> <li>New athlete attributes or team management features should be easily addable without major architectural changes.</li> <li>The system should provide clear, actionable error messages when coaches input invalid team compositions or conflicting athlete assignments.</li> <li>The system should validate critical data formats (dates, indexes, required fields) before executing commands.</li> <li>The application should be able to run on standard laptops commonly used by coaches without requiring high-end hardware.</li> <li>A coach should be able to learn the basic commands (add, list, delete) within 30 minutes of use.</li> <li>Command syntax should follow consistent patterns across all features (e.g., n/ for name, index/ for indexes).</li></ol> <p><em>{More to be added}</em></p> <h3 id="glossary">Glossary<a class="fa fa-anchor" href="#glossary" onclick="event.stopPropagation()"></a></h3> <ul><li><strong>Mainstream OS</strong>: Windows, Linux, Unix, MacOS</li> <li><strong>Private contact detail</strong>: A contact detail that is not meant to be shared with others</li></ul> <hr> <h2 id="appendix-instructions-for-manual-testing"><strong>Appendix: Instructions for manual testing</strong><a class="fa fa-anchor" href="#appendix-instructions-for-manual-testing" onclick="event.stopPropagation()"></a></h2> <p>Given below are instructions to test the app manually.</p> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-info" style="" data-v-19514615><!--[--><i class="fas fa-info" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-info vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><strong>Note:</strong> These instructions only provide a starting point for testers to work on;
 testers are expected to do more <em>exploratory</em> testing.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <h3 id="launch-and-shutdown">Launch and shutdown<a class="fa fa-anchor" href="#launch-and-shutdown" onclick="event.stopPropagation()"></a></h3> <ol><li><p>Initial launch</p> <ol><li><p>Download the jar file and copy into an empty folder</p></li> <li><p>Double-click the jar file Expected: Shows the GUI with a set of sample contacts. The window size may not be optimum.</p></li></ol></li> <li><p>Saving window preferences</p> <ol><li><p>Resize the window to an optimum size. Move the window to a different location. Close the window.</p></li> <li><p>Re-launch the app by double-clicking the jar file.<br>
 Expected: The most recent window size and location is retained.</p></li></ol></li> <li><p><em>{ more test cases …​ }</em></p></li></ol> <h3 id="deleting-a-person">Deleting a person<a class="fa fa-anchor" href="#deleting-a-person" onclick="event.stopPropagation()"></a></h3> <ol><li><p>Deleting a person while all persons are being shown</p> <ol><li><p>Prerequisites: List all persons using the <code class="hljs inline no-lang">list</code> command. Multiple persons in the list.</p></li> <li><p>Test case: <code class="hljs inline no-lang">delete 1</code><br>
 Expected: First contact is deleted from the list. Details of the deleted contact shown in the status message. Timestamp in the status bar is updated.</p></li> <li><p>Test case: <code class="hljs inline no-lang">delete 0</code><br>
 Expected: No person is deleted. Error details shown in the status message. Status bar remains the same.</p></li> <li><p>Other incorrect delete commands to try: <code class="hljs inline no-lang">delete</code>, <code class="hljs inline no-lang">delete x</code>, <code class="hljs inline no-lang">...</code> (where x is larger than the list size)<br>
-Expected: Similar to previous.</p></li></ol></li> <li><p><em>{ more test cases …​ }</em></p></li></ol> <h3 id="saving-data">Saving data<a class="fa fa-anchor" href="#saving-data" onclick="event.stopPropagation()"></a></h3> <ol><li><p>Dealing with missing/corrupted data files</p> <ol><li><em>{explain how to simulate a missing/corrupted file, and the expected behavior}</em></li></ol></li> <li><p><em>{ more test cases …​ }</em></p></li></ol></div> <nav id="page-nav" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 6.0.2</a>, generated on Wed, 1 Oct 2025, 12:54:56 GMT+8]</small></div></footer><!--]--></div>
+Expected: Similar to previous.</p></li></ol></li> <li><p><em>{ more test cases …​ }</em></p></li></ol> <h3 id="saving-data">Saving data<a class="fa fa-anchor" href="#saving-data" onclick="event.stopPropagation()"></a></h3> <ol><li><p>Dealing with missing/corrupted data files</p> <ol><li><em>{explain how to simulate a missing/corrupted file, and the expected behavior}</em></li></ol></li> <li><p><em>{ more test cases …​ }</em></p></li></ol></div> <nav id="page-nav" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 6.0.2</a>, generated on Wed, 1 Oct 2025, 21:14:44 GMT+8]</small></div></footer><!--]--></div>
 </body><script src="/tp/markbind/js/bootstrap-utility.min.js"></script>
 <script src="/tp/markbind/js/polyfill.min.js"></script>
 <script src="/tp/markbind/js/vue.global.prod.min.js"></script>
