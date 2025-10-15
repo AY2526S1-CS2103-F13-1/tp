@@ -154,7 +154,10 @@ public class PersonBuilder {
         return this;
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/master
     public Person build() {
         return new Person(name, dob, phone, email, address, school, role, height, weight, tags);
     }
