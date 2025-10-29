@@ -23,7 +23,6 @@ public class Session {
     public static final String MESSAGE_DATE_CONSTRAINTS =
             "The end date and time must be after the start date and time.";
 
-
     protected LocalDateTime startDate;
     protected LocalDateTime endDate;
     protected DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMMM yyyy HH:mm");
