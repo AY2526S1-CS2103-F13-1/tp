@@ -81,7 +81,8 @@
         "appendix-planned-enhancements": "Appendix: Planned Enhancements",
         "1-show-team-information-for-each-athlete": "1. Show team information for each athlete",
         "2-show-attendance-for-each-athlete": "2. Show attendance for each athlete",
-        "3-auto-deletion-of-sessions-after-the-end-date-and-amp-time-has-passed": "3. Auto deletion of sessions after the end date &amp; time has passed"
+        "3-auto-deletion-of-sessions-after-the-end-date-and-amp-time-has-passed": "3. Auto deletion of sessions after the end date &amp; time has passed",
+        "4-indexed-commands-only-work-for-the-currently-displayed-list-of-athletes-or-teams": "4. Indexed commands only work for the currently displayed list of athletes or teams"
       },
       "headingKeywords": {}
     },
