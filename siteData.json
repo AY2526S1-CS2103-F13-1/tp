@@ -38,6 +38,7 @@
     },
     {
       "src": "DeveloperGuide.md",
+      "title": "Developer Guide",
       "headings": {
         "relaycoach-developer-guide": "RelayCoach Developer Guide",
         "acknowledgements": "Acknowledgements",
