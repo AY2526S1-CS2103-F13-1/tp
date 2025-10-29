@@ -123,6 +123,7 @@
         "deleting-a-team-deleteteam": "Deleting a team : deleteteam",
         "locating-teams-findteam": "Locating teams: findteam",
         "adding-session-addsession": "Adding Session: addsession",
+        "deleting-session-deletesession": "Deleting Session: deletesession",
         "clearing-all-entries-clear": "Clearing all entries : clear",
         "exiting-the-program-exit": "Exiting the program : exit",
         "saving-the-data": "Saving the data",
