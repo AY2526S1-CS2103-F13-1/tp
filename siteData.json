@@ -39,7 +39,7 @@
     {
       "src": "DeveloperGuide.md",
       "headings": {
-        "ab-3-developer-guide": "AB-3 Developer Guide",
+        "relaycoach-developer-guide": "RelayCoach Developer Guide",
         "acknowledgements": "Acknowledgements",
         "setting-up-getting-started": "Setting up, getting started",
         "design": "Design",
@@ -51,6 +51,7 @@
         "common-classes": "Common classes",
         "implementation": "Implementation",
         "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
+        "teams-and-sessions": "Teams and Sessions",
         "proposed-data-archiving": "[Proposed] Data archiving",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
@@ -61,8 +62,9 @@
         "glossary": "Glossary",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
-        "deleting-a-person": "Deleting a person",
-        "saving-data": "Saving data"
+        "deleting-an-athlete": "Deleting an athlete",
+        "saving-data": "Saving data",
+        "teams-and-sessions-2": "Teams and Sessions"
       },
       "headingKeywords": {}
     },
