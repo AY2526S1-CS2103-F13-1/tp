@@ -20,6 +20,9 @@ public class Session {
             .thenComparing(s -> s.getLocation().toString());
 
     public static final String MESSAGE_CONSTRAINTS = "Session must have a valid location and start and end date";
+    public static final String MESSAGE_DATE_CONSTRAINTS =
+            "The end date and time must be after the start date and time.";
+
 
     protected LocalDateTime startDate;
     protected LocalDateTime endDate;
@@ -46,6 +49,13 @@ public class Session {
 
     public LocalDateTime getEndDate() {
         return endDate;
+    }
+
+    /**
+     * Returns true if the session dates are valid (end date is after start date).
+     */
+    public static boolean isValidSessionDates(LocalDateTime startDate, LocalDateTime endDate) {
+        return endDate.isAfter(startDate);
     }
 
     /**

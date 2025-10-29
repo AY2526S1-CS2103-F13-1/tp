@@ -40,8 +40,13 @@ public class AddSessionCommandParser implements Parser<AddSessionCommand> {
             LocalDateTime start = ParserUtil.parseDateTime(argMultimap.getValue(PREFIX_START_DATETIME).get());
             LocalDateTime end = ParserUtil.parseDateTime(argMultimap.getValue(PREFIX_END_DATETIME).get());
 
+            if (!end.isAfter(start)) {
+                throw new ParseException(Session.MESSAGE_DATE_CONSTRAINTS);
+            }
+
             Session session = new Session(location, start, end);
             return new AddSessionCommand(teamIndex, session);
+
         } catch (IllegalArgumentException | NullPointerException e) {
             throw new ParseException("Failed to parse addsession arguments: " + e.getMessage()
                     + "\nUsage: " + AddSessionCommand.MESSAGE_USAGE);
