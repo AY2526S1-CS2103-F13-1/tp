@@ -52,6 +52,7 @@
         "storage-component": "Storage component",
         "common-classes": "Common classes",
         "implementation": "Implementation",
+        "duplicate-athletes-teams-and-sessions": "Duplicate Athletes, Teams, and Sessions",
         "cascading-operations-between-athletes-and-teams": "Cascading operations between Athletes and Teams",
         "teams-and-sessions": "Teams and Sessions",
         "listing-athletes-and-teams": "Listing Athletes and Teams",
